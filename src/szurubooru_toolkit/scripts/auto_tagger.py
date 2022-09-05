@@ -218,6 +218,7 @@ def main(post_id: str = None, file_to_upload: bytes = None) -> None:  # noqa C90
                 total=int(total_posts),
             ),
         ):
+            sleep(10)
             tags = []
 
             # Download the file from szurubooru if its not already locally present.
